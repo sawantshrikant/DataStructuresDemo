@@ -38,6 +38,11 @@ namespace DataStructuresDemo
             Console.WriteLine("\nNodes after removing last node:");
             list.Display();
 
+            // Search for a node with a particular value
+            Console.WriteLine("\nPosition of node with value 56:");
+            list.Search(56);
+
+
 
 
 
