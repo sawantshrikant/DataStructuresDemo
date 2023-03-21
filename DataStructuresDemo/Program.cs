@@ -13,6 +13,11 @@ namespace DataStructuresDemo
             list.Add(70);
             Console.WriteLine("Nodes in the list:");
             list.Display();
+
+            list.AddInReverseOrder(70);
+
+            Console.WriteLine("\nNodes after adding node in reverse order:");
+            list.Display();
         }
     }
 }
