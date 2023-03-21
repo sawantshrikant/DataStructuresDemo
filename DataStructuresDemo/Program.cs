@@ -32,6 +32,17 @@ namespace DataStructuresDemo
             Console.WriteLine("\nNodes after removing first node:");
             list.Display();
 
+            // Remove last node
+            list.RemovelastNode();
+
+            Console.WriteLine("\nNodes after removing last node:");
+            list.Display();
+
+
+
+
+
+
 
         }
     }
