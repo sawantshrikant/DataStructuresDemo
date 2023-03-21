@@ -26,6 +26,13 @@ namespace DataStructuresDemo
             Console.WriteLine("\nNodes after inserting node at position 1:");
             list.Display();
 
+            // Remove first node
+            list.RemoveFirstNode();
+
+            Console.WriteLine("\nNodes after removing first node:");
+            list.Display();
+
+
         }
     }
 }
