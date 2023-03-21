@@ -56,6 +56,33 @@ namespace DataStructuresDemo
             }
         }
 
-       
+        internal void InsertAtParticularPosition(int position, int data) //1,30
+        {
+            Node newestNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newestNode;
+            }
+            if (position == 0)
+            {
+                newestNode.next = this.head;
+                this.head = newestNode;
+                return;
+            }
+            Node prev = null;
+            Node current = this.head;
+            int count = 0;
+            while (current != null && count < position)
+            {
+                prev = current;
+                current = current.next;
+                count++;
+            }
+            newestNode.next = prev.next;
+            prev.next = newestNode;
+        }
+
+
+
     }
 }
